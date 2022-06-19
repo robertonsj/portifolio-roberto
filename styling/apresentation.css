@@ -6,6 +6,12 @@
     position: relative;
     z-index: 1;
 }
+
+#presentation div .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 #presentation h1 {
     display: block;
     width: fit-content;
@@ -27,20 +33,42 @@
 }
 #presentation .cta {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 20px;
     color: gold;
     border: 2px solid gold;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: 20px;
+    margin-top: 40px;
     transition: .5s ease;
     transition-property: background-color, color;
+    border-radius: 7px;
 }
+
+#presentation .cta-right {
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(235, 150, 81);
+    border: 2px solid rgb(235, 150, 81);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 40px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+    border-radius: 7px;
+}
+
 #presentation .cta:hover {
     color: white;
     font-weight: 500;
     background-color: gold;
+}
+
+#presentation .cta-right:hover {
+    color: white;
+    font-weight: 500;
+    background-color: rgb(235, 150, 81);
 }
 
 #presentation h1 span {
