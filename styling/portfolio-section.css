@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* Seção de Portifólio*/
 #portfolio .portfolio{
     flex-direction: column;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 100px 0;
 }
-#portfolio .portfolio-header h1 {
-    margin-bottom: 50px;
+
+#portfolio .portfolio .header{
+    padding: 60px 0px;
 }
+.header .section-title{
+    text-shadow: 4px 4px 2px #aaa;
+}
+
 #portfolio .all-projects {
     display: flex;
     align-items: center;
@@ -30,22 +37,30 @@
     flex-basis: 50%;
     height: 100%;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
+    background-image: linear-gradient(60deg, #2fcf3d 0%, #002349 100%);
     color: white;
 }
 
 #portfolio .project-info h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500px;
+    letter-spacing: 3px;
+}
+
+#portfolio .project-info p {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    letter-spacing: .15rem;
 }
 
 #portfolio .project-info h2 {
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #portfolio .project-img {
@@ -71,3 +86,4 @@
 #portfolio .project-item:hover .project-img img{
     transform: scale(1.1);
 }
+
