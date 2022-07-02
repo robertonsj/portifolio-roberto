@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Seção de Portifólio*/
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
 #portfolio .portfolio{
     flex-direction: column;
     width: 90%;
@@ -18,17 +28,12 @@
 #portfolio .all-projects {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 #portfolio .project-item {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    width: 80%;
-    margin: 20px auto;
-    overflow: hidden;
+    overflow: hidden; /*if this line is get away, some borders disappear*/
     border-radius: 10px;
 }
 
@@ -39,18 +44,18 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, #2fcf3d 0%, #002349 100%);
+    background-image: linear-gradient(60deg, #2f74cf 0%, #002349 100%);
     color: white;
 }
 
 #portfolio .project-info h1 {
     font-size: 3rem;
     font-weight: 500px;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 #portfolio .project-info p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0;
     letter-spacing: .15rem;
@@ -61,16 +66,17 @@
     font-weight: 500;
     margin-top: 10px;
     margin-bottom: 20px;
+    letter-spacing: .15rem;
 }
 
 #portfolio .project-img {
     flex-basis: 50%;
-    height: 300px;
     overflow: hidden;
-    position: relative;
+    /*height: 300px;
+    position: relative;*/
 }
 
-#portfolio .project-img:after {
+/*#portfolio .project-img:after {
     content: '';
     position: absolute;
     left: 0;
@@ -79,11 +85,12 @@
     width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     opacity: 0.7;
-}
+}*/
 #portfolio .project-img img{
-    transition: 0.5 ease transform;
+    transition: 1.5 ease transform;
 }
 #portfolio .project-item:hover .project-img img{
-    transform: scale(1.1);
+    transform: scale(1.3);
+    
 }
 

@@ -2,9 +2,16 @@
 #presentation {
     background-image: url(../img/web-development.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     position: relative;
     z-index: 1;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #presentation div .buttons {
@@ -19,7 +26,7 @@
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
-    animation-delay: 1.5s;
+    /*animation-delay: 1.5s;*/
 }
 #presentation h1:nth-child(1){
     animation-delay: .8s;
@@ -33,15 +40,14 @@
 }
 #presentation .cta {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 15px;
     color: gold;
     border: 2px solid gold;
     font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: .1rem;
+    letter-spacing: .3rem;
     margin-top: 40px;
-    transition: .5s ease;
-    transition-property: background-color, color;
+    transition: background-color, color .5s ease;
     border-radius: 7px;
 }
 
@@ -52,7 +58,7 @@
     border: 2px solid rgb(235, 150, 81);
     font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: .1rem;
+    letter-spacing: .3rem;
     margin-top: 40px;
     transition: .5s ease;
     transition-property: background-color, color;
@@ -77,13 +83,10 @@
     left: 0;
     height: 100%;
     width: 0%;
-    animation: text_reveal_box 1s ease;
-    animation-delay: .5s;
+    animation: text_reveal_box 1s ease .5s;
     background-color: gold;
 }
-#presentation h1:nth-child(1) span {
-    animation-delay: .5s;
-}
+
 #presentation h1:nth-child(2) span {
     animation-delay: 1.5s;
 }

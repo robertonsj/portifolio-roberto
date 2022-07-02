@@ -15,29 +15,13 @@ a{
     text-decoration: none;
 }
 img{
-    height: 100%;
     width: 100%;
-    object-fit: cover;
+    height: 100%;
 }
 p {
     font-size: 1.4rem;
     margin-top: 5px;
     line-height: 2.5rem;
-    font-weight: 200;
-    letter-spacing: 0.05rem;
 }
 
-.container{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.section-title {
-    font-size: 4rem;
-    font-weight: 500;
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-}
+
